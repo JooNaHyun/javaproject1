@@ -3,44 +3,45 @@ package PolyLand;
 import java.util.List;
 
 public class PrintClass {
+	
 	public static void printTotalList(MakeTotalList makeTotalList) {
 		List<OrderList> aa = makeTotalList.getData();
 		int sum = 0;
-		System.out.print("==================== ì—ë²„ëœë“œ ====================\n");
+		System.out.print("==================== ¿¡¹ö·£µå ====================\n");
 
 		for (int i = 0; i < aa.size(); i++) {
 			switch (aa.get(i).getTicket()) {
 			case 1:
-				System.out.print("ì£¼ê°„ê¶Œ ");
+				System.out.print("ÁÖ°£±Ç ");
 				break;
 			case 2:
-				System.out.print("ì•¼ê°„ê¶Œ ");
+				System.out.print("¾ß°£±Ç ");
 				break;
 			}
 			switch (aa.get(i).getTicket()) {
 			case 1:
-				System.out.print("ì£¼ê°„ê¶Œ ");
+				System.out.print("ÁÖ°£±Ç ");
 				break;
 			case 2:
-				System.out.print("ì•¼ê°„ê¶Œ ");
+				System.out.print("¾ß°£±Ç ");
 				break;
 			}
 
 			switch (aa.get(i).getAge()) {
 			case 1:
-				System.out.print("ëŒ€ì¸ X ");
+				System.out.print("´ëÀÎ X ");
 				break;
 			case 2:
-				System.out.print("ì²­ì†Œë…„ X");
+				System.out.print("Ã»¼Ò³â X");
 				break;
 			case 3:
-				System.out.print("ì†Œì¸ X");
+				System.out.print("¼ÒÀÎ X");
 				break;
 			case 4:
-				System.out.print("ê²½ë¡œ X");
+				System.out.print("°æ·Î X");
 				break;
 			case 5:
-				System.out.print("ìœ ì•„ X");
+				System.out.print("À¯¾Æ X");
 				break;
 			}
 
@@ -49,24 +50,24 @@ public class PrintClass {
 
 			switch (aa.get(i).getFirst()) {
 			case 1:
-				System.out.print(" * ìš°ëŒ€ì ìš© ì—†ìŒ\n");
+				System.out.print(" * ¿ì´ëÀû¿ë ¾øÀ½\n");
 				break;
 			case 2:
-				System.out.print(" * ì¥ì• ì¸ ìš°ëŒ€ì ìš©\n");
+				System.out.print(" * Àå¾ÖÀÎ ¿ì´ëÀû¿ë\n");
 				break;
 			case 3:
-				System.out.print(" * êµ­ê°€ìœ ê³µì ìš°ëŒ€ì ìš©\n");
+				System.out.print(" * ±¹°¡À¯°øÀÚ ¿ì´ëÀû¿ë\n");
 				break;
 			case 4:
-				System.out.print(" * ë‹¤ìë…€ ìš°ëŒ€ì ìš©\n");
+				System.out.print(" * ´ÙÀÚ³à ¿ì´ëÀû¿ë\n");
 				break;
 			case 5:
-				System.out.print(" * ì„ì‚°ë¶€ ìš°ëŒ€ì ìš©\n");
+				System.out.print(" * ÀÓ»êºÎ ¿ì´ëÀû¿ë\n");
 				break;
 			}
-			sum += aa.get(i).getTotal();
+			sum += aa.get(i).getPrice();
 		}
-		System.out.printf("ì…ì¥ë£Œì˜ ì´ì•¡ì€ %dì…ë‹ˆë‹¤.\n", sum);
+		System.out.printf("ÀÔÀå·áÀÇ ÃÑ¾×Àº %dÀÔ´Ï´Ù.\n", sum);
 
 	}
 }
