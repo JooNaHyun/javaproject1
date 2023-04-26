@@ -64,7 +64,7 @@ public class PrintClass {
 				System.out.print(" * 임산부 우대적용\n");
 				break;
 			}
-			sum += aa.get(i).get();
+			sum += aa.get(i).getTotal();
 		}
 		System.out.printf("입장료의 총액은 %d입니다.\n", sum);
 
