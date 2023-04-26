@@ -9,7 +9,6 @@ public class daily01 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {//예외가 발생하지 않았을 때   
-			
 			File k31_f = new File("c:\\Users\\nahyun\\test.txt");//test.txt라는 파일을 c:\\Users\\nahyun 경로에 만든다.
 			FileWriter k31_fw = new FileWriter(k31_f);//FileWriter를 사용하여 파일을 생성하고 쓰기 작업을 수행
 			
